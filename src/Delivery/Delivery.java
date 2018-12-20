@@ -29,4 +29,6 @@ public class Delivery {
             for(IDeliveryTech tech : techs)
                 tech.toDeliver(pack);
     }
+
+    public ArrayList<Package> getPackages() {return packages; }
 }
