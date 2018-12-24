@@ -1,5 +1,6 @@
 package Pack;
 
+import Client.Decorator.Client;
 import Delivery.Delivery;
 import Pack.Composite.CompositePackage;
 import Pack.Composite.Order;
@@ -14,8 +15,9 @@ public class Facade {
         this.company = company;
     }
 
-    public void makeOrder() {
-
+    public void makeOrder(Client sender, Client reciever, int[] size, String name) {
+        Order order = new Order(sender, reciever, size, name);
+        company.addPack(order);
     }
 
     public void fillComposite(Order order) {

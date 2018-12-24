@@ -12,6 +12,6 @@ public class Car extends Vehicle {
 
     @Override
     public void display() {
-        impl.display(image, x, y);
+        image.draw(impl, x, y);
     }
 }
