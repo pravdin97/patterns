@@ -15,4 +15,17 @@ public abstract class Vehicle {
     }
 
     public abstract void display();
+
+    public void setImpl(Implementation impl) {
+        this.impl = impl;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
+    public void setCoords(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 }

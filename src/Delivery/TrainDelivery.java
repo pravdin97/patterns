@@ -1,10 +1,14 @@
 package Delivery;
 
+import Delivery.Flyweight.Image;
+
 public class TrainDelivery extends Delivery {
 
-    public TrainDelivery()
+    public TrainDelivery(Image img)
     {
         super();
-        techs.add(new ByTrain());
+        ByTrain byTrain = new ByTrain();
+        byTrain.setImage(img);
+        techs.add(byTrain);
     }
 }

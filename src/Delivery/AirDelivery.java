@@ -1,10 +1,14 @@
 package Delivery;
 
+import Delivery.Flyweight.Image;
+
 public class AirDelivery extends Delivery {
 
-    public AirDelivery()
+    public AirDelivery(Image img)
     {
         super();
-        techs.add(new ByPlane());
+        ByPlane byPlane = new ByPlane();
+        byPlane.setImage(img);
+        techs.add(byPlane);
     }
 }

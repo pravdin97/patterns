@@ -1,9 +1,16 @@
 package Delivery;
 
+import Delivery.Flyweight.Image;
+
+import java.io.IOException;
+
 public class CarDelivery extends Delivery {
 
-    public CarDelivery(){
+    public CarDelivery(Image img){
         super();
-        techs.add(new ByCar());
+
+        ByCar byCar = new ByCar();
+        byCar.setImage(img);
+        techs.add(byCar);
     }
 }
