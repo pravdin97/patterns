@@ -19,7 +19,9 @@ public class Component extends JComponent {
     }
 
     @Override
-    public void print(Graphics g) {
-        g.drawImage(bufferedImage, x, y, this);
+    public void paint(Graphics g) {
+        super.paint(g);
+        System.out.println("1");
+        g.drawImage(bufferedImage, x, y, null);
     }
 }

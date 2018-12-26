@@ -3,6 +3,7 @@ import Delivery.Bridge.Abstraction.Car;
 import Delivery.Bridge.Abstraction.Train;
 import Delivery.Bridge.Abstraction.Vehicle;
 import Delivery.Bridge.Implem.Draw;
+import Delivery.Bridge.Implem.Text;
 import Pack.Composite.Package;
 
 

@@ -15,18 +15,23 @@ public class InformExpert {
     }
 
     public void count() {
-        for (Package p :company.getPackages()) {
+        countOrders = 0;
+        for (Package p : company.getPackages()) {
             if (p.getClass() == Order.class)
                 countOrders++;
             else {
-                CompositePackage cp = (CompositePackage)p;
+                CompositePackage cp = (CompositePackage) p;
                 Iterator i = cp.createIterator();
-                while(i.hasNext())
-                {
+                while (i.hasNext()) {
                     countOrders++;
                     i.next();
                 }
             }
         }
+
+    }
+
+    public void setDelivery(Delivery delivery) {
+        company = delivery;
     }
 }

@@ -9,6 +9,7 @@ import Delivery.Bridge.Frame;
 import Delivery.Flyweight.Image;
 import Pack.Composite.CompositePackage;
 import Pack.Composite.Order;
+import Pack.InformExpert;
 import Pack.Iterator.Iterator;
 
 import java.io.IOException;
@@ -32,7 +33,7 @@ public class Main {
         Frame.init();
 
         Delivery del = new CarDelivery(car);
-        Delivery del_ = new TrainDelivery(train);
+//        Delivery del_ = new TrainDelivery(train);
 
         Client client1 = new Man("Sender");
         Client client2 = new Man("Reciever");
@@ -58,11 +59,11 @@ public class Main {
         del.addPack(pack1);
         del.performDelivery();
 
-        pack1.x = 100; pack1.y = 100;
-        pack2.x = 200; pack2.y = 200;
-        del_.addPack(pack1);
-        del_.addPack(pack2);
-        del_.performDelivery();
+//        pack1.x = 100; pack1.y = 100;
+//        pack2.x = 200; pack2.y = 200;
+//        del_.addPack(pack1);
+//        del_.addPack(pack2);
+//        del_.performDelivery();
 
 
         Iterator it = compositePackage.createIterator();
@@ -72,5 +73,12 @@ public class Main {
             o.printName();
         }
 
+        InformExpert informExpert = new InformExpert(del);
+        informExpert.count();
+        System.out.println(informExpert.countOrders);
+
+//        informExpert.setDelivery(del_);
+//        informExpert.count();
+//        System.out.println(informExpert.countOrders);
     }
 }

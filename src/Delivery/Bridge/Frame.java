@@ -14,7 +14,8 @@ public class Frame {
     public static void init() {
         frame = new JFrame("Hello");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setBounds(100, 100, 300, 300);
+        frame.setBounds(100, 100, 700, 500);
+//        frame.setResizable(false);
         panel = new JPanel();
         frame.setContentPane(panel);
 
@@ -31,9 +32,14 @@ public class Frame {
     }
 
     public static void print(BufferedImage bufferedImage, int x, int y) {
-        Component component = new Component(bufferedImage, x, y);
-        panel.add(component);
-        component.paint(frame.getGraphics());
-        frame.repaint();
+//        Component component = new Component(bufferedImage, x, y);
+//        panel.add(component);
+//        component.paint(frame.getGraphics());
+//        frame.repaint();
+
+//        JButton button = new JButton();
+//        button.setBounds(x, y, bufferedImage.getWidth(), bufferedImage.getHeight());
+//        panel.add(button);
+        frame.getGraphics().drawImage(bufferedImage, x, y, null);
     }
 }
