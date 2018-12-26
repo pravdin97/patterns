@@ -9,6 +9,7 @@ import Delivery.Bridge.Frame;
 import Delivery.Flyweight.Image;
 import Pack.Composite.CompositePackage;
 import Pack.Composite.Order;
+import Pack.Facade;
 import Pack.InformExpert;
 import Pack.Iterator.Iterator;
 
@@ -30,10 +31,10 @@ public class Main {
             e.printStackTrace();
         }
 
-        Frame.init();
+        Frame frame = Frame.getInstance();
 
         Delivery del = new CarDelivery(car);
-//        Delivery del_ = new TrainDelivery(train);
+        Delivery del_ = new TrainDelivery(train);
 
         Client client1 = new Man("Sender");
         Client client2 = new Man("Reciever");
@@ -59,11 +60,11 @@ public class Main {
         del.addPack(pack1);
         del.performDelivery();
 
-//        pack1.x = 100; pack1.y = 100;
-//        pack2.x = 200; pack2.y = 200;
-//        del_.addPack(pack1);
-//        del_.addPack(pack2);
-//        del_.performDelivery();
+        pack1.x = 100; pack1.y = 100;
+        pack2.x = 200; pack2.y = 200;
+        del_.addPack(pack1);
+        del_.addPack(pack2);
+        del_.performDelivery();
 
 
         Iterator it = compositePackage.createIterator();
@@ -77,8 +78,24 @@ public class Main {
         informExpert.count();
         System.out.println(informExpert.countOrders);
 
-//        informExpert.setDelivery(del_);
-//        informExpert.count();
-//        System.out.println(informExpert.countOrders);
+        informExpert.setDelivery(del_);
+        informExpert.count();
+        System.out.println(informExpert.countOrders);
+
+        Client client4 = new Man("client4");
+        Client client5 = new Man("client5");
+        Sender sender4 = new Sender(client4);
+        Reciever reciever5 = new Reciever(client5);
+
+
+        Facade facade = new Facade(del_);
+        Order o1 = facade.makeOrder(sender4, reciever5, size, "order45");
+        Order o2 = facade.makeOrder(sender4, reciever5, size, "order4545");
+        Order o3 = o2.clone(reciever);
+
+        facade.newComposite(new Order[]{o1, o2, o3});
+
+        informExpert.count();
+        System.out.println(informExpert.countOrders);
     }
 }

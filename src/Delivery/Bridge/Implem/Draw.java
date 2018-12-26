@@ -17,6 +17,6 @@ public class Draw extends Implementation {
     public void display(BufferedImage img, int x, int y)
     {
         //draw
-        Frame.print(img, x, y);
+        Frame.getInstance().print(img, x, y);
     }
 }

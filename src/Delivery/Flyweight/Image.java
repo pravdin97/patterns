@@ -13,7 +13,7 @@ public class Image {
     Отрисовка спрайта в положении x, y
      */
 
-    private BufferedImage image;
+    public BufferedImage image;
     public void draw(Implementation impl, int x, int y)
     {
         impl.display(image, x, y);

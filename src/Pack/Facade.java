@@ -15,9 +15,10 @@ public class Facade {
         this.company = company;
     }
 
-    public void makeOrder(Client sender, Client reciever, int[] size, String name) {
+    public Order makeOrder(Client sender, Client reciever, int[] size, String name) {
         Order order = new Order(sender, reciever, size, name);
         company.addPack(order);
+        return order;
     }
 
     public void fillComposite(Order order) {
@@ -31,11 +32,12 @@ public class Facade {
         }
     }
 
-    public void newComposite(Order order) {
+    public void newComposite(Order[] orders) {
         CompositePackage compositePackage = new CompositePackage("new");
 
-        compositePackage.add(order);
-
+        for (Order o: orders) {
+            compositePackage.add(o);
+        }
         company.addPack(compositePackage);
     }
 }

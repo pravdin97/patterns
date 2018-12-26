@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49e165eb-5955-41f9-9a10-92caff982c08" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/CarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/PlaneFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/TrainFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/VehicleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pack/Composite/Prototype.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Delivery/Bridge/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/Bridge/Component.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Delivery/Bridge/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/Bridge/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Delivery/ByTrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/ByTrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Delivery/Bridge/Implem/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/Bridge/Implem/Draw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Delivery/ByCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/ByCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Delivery/Flyweight/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/Flyweight/Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pack/InformExpert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pack/InformExpert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pack/Composite/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pack/Composite/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pack/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pack/Facade.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,23 +140,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="JAVA/" value="1" />
-          <entry key="java" value="58" />
+          <entry key="java" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="58" />
+          <entry key="JAVA" value="73" />
           <entry key="UML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1946" />
+          <entry key="java" value="2762" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1946" />
+          <entry key="JAVA" value="2762" />
+          <entry key="PLAIN_TEXT" value="46" />
         </counts>
       </usages-collector>
     </session>
@@ -159,20 +168,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Delivery/Delivery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+            <state relative-caret-position="1378">
+              <caret line="95" column="53" lean-forward="true" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,23 +181,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pack/InformExpert.java">
+        <entry file="file://$PROJECT_DIR$/src/Pack/Facade.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-              <folding>
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-              </folding>
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Frame.java">
+        <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/VehicleFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+            <state relative-caret-position="119">
+              <caret line="7" column="72" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,8 +204,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Delivery/ByCar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="357">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,27 +214,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Component.java">
+        <entry file="file://$PROJECT_DIR$/src/Pack/Composite/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="358">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Car.java">
+        <entry file="file://$PROJECT_DIR$/src/Pack/Composite/Prototype.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -246,20 +240,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Delivery/Flyweight/Image.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="136">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Delivery/CarDelivery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding>
-                <element signature="e#363#364#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Implem/Draw.java">
+        <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/CarFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="187">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/TrainFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -269,9 +291,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -282,12 +304,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MultiDelivery.java" />
-        <option value="$PROJECT_DIR$/src/ByCar.java" />
-        <option value="$PROJECT_DIR$/src/Package.java" />
-        <option value="$PROJECT_DIR$/src/ByPlane.java" />
-        <option value="$PROJECT_DIR$/src/ByTrain.java" />
-        <option value="$PROJECT_DIR$/src/Proxy.java" />
         <option value="$PROJECT_DIR$/src/Delivery.java" />
         <option value="$PROJECT_DIR$/src/CarDelivery.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
@@ -311,13 +327,11 @@
         <option value="$PROJECT_DIR$/src/Delivery/Delivery.java" />
         <option value="$PROJECT_DIR$/src/Client/Decorator/Man.java" />
         <option value="$PROJECT_DIR$/src/Pack/Composite/CompositePackage.java" />
-        <option value="$PROJECT_DIR$/src/Pack/Facade.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Implem/Implementation.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Implem/Text.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Car.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Plane.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Train.java" />
-        <option value="$PROJECT_DIR$/src/Delivery/Flyweight/Image.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Test/FrameTest.java" />
         <option value="$PROJECT_DIR$/src/Pack/Composite/Package.java" />
@@ -326,12 +340,20 @@
         <option value="$PROJECT_DIR$/src/Delivery/AirDelivery.java" />
         <option value="$PROJECT_DIR$/src/Delivery/TrainDelivery.java" />
         <option value="$PROJECT_DIR$/src/Delivery/CarDelivery.java" />
-        <option value="$PROJECT_DIR$/src/Delivery/Bridge/Implem/Draw.java" />
         <option value="$PROJECT_DIR$/src/Delivery/ByTrain.java" />
-        <option value="$PROJECT_DIR$/src/Delivery/ByCar.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Component.java" />
         <option value="$PROJECT_DIR$/src/Pack/InformExpert.java" />
+        <option value="$PROJECT_DIR$/src/Pack/Facade.java" />
+        <option value="$PROJECT_DIR$/src/Delivery/Flyweight/Image.java" />
+        <option value="$PROJECT_DIR$/src/Delivery/Bridge/Implem/Draw.java" />
         <option value="$PROJECT_DIR$/src/Delivery/Bridge/Frame.java" />
+        <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/CarFactory.java" />
+        <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/PlaneFactory.java" />
+        <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/TrainFactory.java" />
+        <option value="$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/VehicleFactory.java" />
+        <option value="$PROJECT_DIR$/src/Delivery/ByCar.java" />
+        <option value="$PROJECT_DIR$/src/Pack/Composite/Prototype.java" />
+        <option value="$PROJECT_DIR$/src/Pack/Composite/Order.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -343,7 +365,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="900" />
+    <option name="x" value="491" />
+    <option name="y" value="-18" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -397,6 +420,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Delivery" type="462c0819:PsiDirectoryNode" />
               <item name="Bridge" type="462c0819:PsiDirectoryNode" />
+              <item name="Abstraction" type="462c0819:PsiDirectoryNode" />
+              <item name="Factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patterns-architecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns-architecture" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Delivery" type="462c0819:PsiDirectoryNode" />
+              <item name="Bridge" type="462c0819:PsiDirectoryNode" />
               <item name="Implem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -412,6 +444,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Pack" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="patterns-architecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns-architecture" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Pack" type="462c0819:PsiDirectoryNode" />
+              <item name="Composite" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -424,7 +463,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545836265176" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545848638103" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -500,7 +539,7 @@
       <workItem from="1545270377373" duration="509000" />
       <workItem from="1545626526682" duration="7739000" />
       <workItem from="1545741628294" duration="7894000" />
-      <workItem from="1545826718236" duration="3955000" />
+      <workItem from="1545826718236" duration="13371000" />
     </task>
     <task id="LOCAL-00002" summary="3rd lab completed">
       <created>1545636215152</created>
@@ -509,11 +548,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545636215152</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4th lab not completed: graphics are ugly">
+      <created>1545836335077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545836335077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48065000" />
+    <option name="totallyTimeSpent" value="57481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,7 +574,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.15511727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.15511727" />
       <window_info id="Structure" order="1" sideWeight="0.5009009" side_tool="true" weight="0.15351813" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -537,8 +583,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.5009009" side_tool="true" weight="0.15351813" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39935064" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39935064" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3917749" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
@@ -566,22 +612,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3rd lab completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd lab completed" />
+    <MESSAGE value="4th lab not completed: graphics are ugly" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th lab not completed: graphics are ugly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>79</line>
+          <line>60</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>59</line>
+          <line>76</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -678,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Plane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Implem/Text.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -697,17 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4743">
           <caret line="306" column="32" lean-forward="true" selection-start-line="306" selection-start-column="32" selection-end-line="306" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pack/Composite/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,26 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="993" column="16" selection-start-line="993" selection-start-column="16" selection-end-line="993" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/CarDelivery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,26 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pack/Facade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Implem/Implementation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -895,20 +884,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Implem/Draw.java">
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Delivery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="391">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/Flyweight/Image.java">
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Train.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Plane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -924,37 +920,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/ByCar.java">
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="255">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Delivery/Delivery.java">
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Implem/Draw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="221">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+        <state relative-caret-position="154">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/PlaneFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/TrainFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/CarDelivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/ByCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pack/Composite/Prototype.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pack/Composite/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pack/Facade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/VehicleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Bridge/Abstraction/Factory/CarFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Delivery/Flyweight/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="1378">
+          <caret line="95" column="53" lean-forward="true" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -2,7 +2,7 @@ package Pack.Composite;
 
 import Client.Decorator.Client;
 
-public class Order extends Package {
+public class Order extends Package implements Prototype{
     private Client sender;
     private Client reciever;
     private int[] size;
@@ -17,5 +17,10 @@ public class Order extends Package {
     @Override
     public void printName() {
         System.out.println(name);
+    }
+
+    @Override
+    public Order clone(Client newRec) {
+        return new Order(sender, newRec, size, name);
     }
 }
