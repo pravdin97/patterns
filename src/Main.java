@@ -31,8 +31,6 @@ public class Main {
             e.printStackTrace();
         }
 
-        Frame frame = Frame.getInstance();
-
         Delivery del = new CarDelivery(car);
         Delivery del_ = new TrainDelivery(train);
 
@@ -97,5 +95,6 @@ public class Main {
 
         informExpert.count();
         System.out.println(informExpert.countOrders);
+//        del_.performDelivery();
     }
 }
