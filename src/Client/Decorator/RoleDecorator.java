@@ -14,4 +14,14 @@ abstract class RoleDecorator implements Client {
     public void contact() {
         client.contact();
     }
+
+    @Override
+    public int getX() {
+        return client.getX();
+    }
+
+    @Override
+    public int getY() {
+        return client.getY();
+    }
 }

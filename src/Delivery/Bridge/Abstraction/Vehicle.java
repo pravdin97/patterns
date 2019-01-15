@@ -8,6 +8,7 @@ public abstract class Vehicle {
     protected Implementation impl;
     protected int x, y;
     protected Image image;
+    protected int[][] route;
 
     public Vehicle(Implementation impl, Image img) {
         this.impl = impl;
@@ -27,5 +28,13 @@ public abstract class Vehicle {
     public void setCoords(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public void setRoute(int[][] route) {
+        this.route = route;
+    }
+
+    public Implementation getImpl() {
+        return impl;
     }
 }

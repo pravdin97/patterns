@@ -11,4 +11,14 @@ public class Text extends Implementation {
         System.out.println("Средство доставки сейчас находится в ("
                 + x + ", " + y + ")");
     }
+
+    @Override
+    public void clearArea() {
+        System.out.flush();
+    }
+
+    @Override
+    public void displayRoute(BufferedImage img, int[][] route) {
+
+    }
 }

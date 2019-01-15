@@ -23,4 +23,9 @@ public class Image {
     {
         image = ImageIO.read(new File(path));
     }
+
+    public void drawRoute(Implementation impl, int[][] route)
+    {
+        impl.displayRoute(image, route);
+    }
 }

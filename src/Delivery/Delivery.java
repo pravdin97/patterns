@@ -1,16 +1,20 @@
 package Delivery;
 
 import java.util.ArrayList;
+
+import Delivery.Bridge.Abstraction.Vehicle;
 import Pack.Composite.Package;
 
 
-public class Delivery {
+public abstract class Delivery {
     protected ArrayList<IDeliveryTech> techs;
     protected ArrayList<Package> packages;
+    protected Vehicle vehicle;
 
-    public Delivery(){
+    public Delivery(Vehicle vehicle){
         techs = new ArrayList<>();
         packages = new ArrayList<>();
+        this.vehicle = vehicle;
     }
 
     public void addDeliveryTech(IDeliveryTech deliveryTech)
@@ -29,6 +33,8 @@ public class Delivery {
             for(IDeliveryTech tech : techs)
                 tech.toDeliver(pack);
     }
+
+    public abstract void toDeliverOrder(Package pack, Vehicle vehicle);
 
     public ArrayList<Package> getPackages() {return packages; }
 }

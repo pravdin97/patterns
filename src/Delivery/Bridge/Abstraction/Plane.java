@@ -10,6 +10,8 @@ public class Plane extends Vehicle {
 
     @Override
     public void display() {
-        image.draw(impl, x, y);
+//        image.draw(impl, x, y);
+
+        image.drawRoute(impl, route);
     }
 }

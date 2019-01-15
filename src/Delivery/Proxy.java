@@ -1,18 +1,27 @@
 package Delivery;
+import Delivery.Bridge.Abstraction.Vehicle;
 import Pack.Composite.Package;
+import Pack.Composite.Prototype;
 
 
 public class Proxy extends Delivery {
     private Delivery proxy;
 
-    public Proxy()
+    public Proxy(Vehicle vehicle)
     {
-        proxy = new MultiDelivery();
+        super(vehicle);
+        proxy = new MultiDelivery(vehicle);
     }
+
 
     @Override
     public void performDelivery() {
         proxy.performDelivery();
+    }
+
+    @Override
+    public void toDeliverOrder(Package pack, Vehicle vehicle) {
+
     }
 
     @Override

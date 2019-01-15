@@ -17,6 +17,10 @@ public class Facade {
 
     public Order makeOrder(Client sender, Client reciever, int[] size, String name) {
         Order order = new Order(sender, reciever, size, name);
+        order.x = sender.getX();
+        order.y = sender.getY();
+        order.xFinish = reciever.getX();
+        order.yFinish = reciever.getY();
         company.addPack(order);
         return order;
     }

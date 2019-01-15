@@ -11,11 +11,14 @@ public class ByTrain extends IDeliveryTech {
 
     private Vehicle vehicle;
 
+    public ByTrain(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
     @Override
     public void toDeliver(Package pack) {
 
 //        System.out.println(" is delivering by train");
-        vehicle = new Train(new Draw(), image);
         vehicle.setCoords(pack.x, pack.y);
 
         vehicle.display();

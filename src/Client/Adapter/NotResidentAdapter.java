@@ -14,4 +14,14 @@ public class NotResidentAdapter implements Client {
     public void contact() {
         notResident.DrawupDocuments();
     }
+
+    @Override
+    public int getX() {
+        return notResident.getX();
+    }
+
+    @Override
+    public int getY() {
+        return notResident.getY();
+    }
 }

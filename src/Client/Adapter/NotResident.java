@@ -8,6 +8,7 @@ public class NotResident {
     private String country;
     private String address;
     private String docs;
+    private int x, y;
 
     public NotResident(String firstName, String lastName, String secondName, String country, String address) {
         this.firstName = firstName;
@@ -21,4 +22,11 @@ public class NotResident {
         docs = "";
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 }
