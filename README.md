@@ -1,2 +1,3 @@
 # patterns
-patterns and architecture
+Architecture of delivery App
+with patterns
