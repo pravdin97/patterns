@@ -17,8 +17,20 @@ public class Text extends Implementation {
         System.out.flush();
     }
 
+    private int currPoint;
+    private BufferedImage currImage;
+    private int[][] currRoute;
+
     @Override
     public void displayRoute(BufferedImage img, int[][] route) {
+        currPoint = 0;
+        currImage = img;
+        currRoute = route;
 
+        while(currPoint < currRoute.length)
+        {
+            display(currImage, currRoute[currPoint][0], currRoute[currPoint][1]);
+            currPoint++;
+        }
     }
 }

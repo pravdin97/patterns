@@ -57,11 +57,10 @@ public class ByCar extends IDeliveryTech {
         else {
             step = (x1 - x0) / NUMSTEPS;
 
+            //поменять цикл!!!
             for (int x = x0; x <= x1; x += step) {
-                int y = getNewY(x, y0, y1, x0, x1);
 
-//                vehicle.setCoords(x, y);
-//                vehicle.display();
+                int y = getNewY(x, y0, y1, x0, x1);
 
                 //формируем маршрут
                 route[k][0] = x;
