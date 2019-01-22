@@ -17,8 +17,18 @@ public class Text extends Implementation {
         System.out.flush();
     }
 
+    private int currPoint;
+    private BufferedImage currImage;
+    private int[][] currRoute;
+
     @Override
     public void displayRoute(BufferedImage img, int[][] route) {
+        currPoint = 0;
+        currImage = img;
+        currRoute = route;
 
+        for (currPoint = 0; currPoint < currRoute.length; currPoint++)
+            System.out.println("Средство доставки сейчас находится в ("
+                    + currRoute[currPoint][0] + ", " + currRoute[currPoint][1] + ")");
     }
 }

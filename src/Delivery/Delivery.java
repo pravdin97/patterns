@@ -36,5 +36,16 @@ public abstract class Delivery {
 
     public abstract void toDeliverOrder(Package pack, Vehicle vehicle);
 
+    public Package findOrder(long number) {
+        for (Package pack : packages)
+            if (pack.getNumber() == number)
+                return pack;
+        return null;
+    }
+
+    public void dropPackage(Package p) {
+        packages.remove(p);
+    }
+
     public ArrayList<Package> getPackages() {return packages; }
 }

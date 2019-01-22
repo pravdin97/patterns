@@ -72,8 +72,8 @@ public class Controller {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        impl = new Draw(scene);
-//        impl = new Text();
+//        impl = new Draw(scene);
+        impl = new Text();
 
         deliveryView = new DeliveryView(impl, image);
         informExpert = new InformExpert(deliveryView.getDelivery());
