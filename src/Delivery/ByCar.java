@@ -1,4 +1,5 @@
 package Delivery;
+import Behavior.Visitor.Visitor;
 import Delivery.Bridge.Abstraction.Car;
 import Delivery.Bridge.Abstraction.Factory.CarFactory;
 import Delivery.Bridge.Abstraction.Factory.VehicleFactory;
@@ -13,6 +14,7 @@ import java.io.IOException;
 
 public class ByCar extends IDeliveryTech {
     private static final int NUMSTEPS = 10;
+    private static final double eps = 0.1;
 
     private Vehicle vehicle;
 
@@ -30,7 +32,7 @@ public class ByCar extends IDeliveryTech {
 
         int step, k = 0;
 
-        int[][] route = new int[NUMSTEPS+1][2];
+        int[][] route = new int[NUMSTEPS][2];
 
         vehicle.getImpl().clearArea();
 
@@ -38,7 +40,8 @@ public class ByCar extends IDeliveryTech {
         {
             step = (y1 - y0) / NUMSTEPS;
 
-            for (int y = y0; y <= y1; y += step)
+            int y = y0;
+            for (int i = 0; i < NUMSTEPS; i++)
             {
 //                vehicle.setCoords(x0, y);
 //                vehicle.display();
@@ -47,33 +50,47 @@ public class ByCar extends IDeliveryTech {
                 route[k][0] = x0;
                 route[k][1] = y;
                 k++;
+                y += step;
 
                 if (step == 0)
                     break;
             }
+
             vehicle.setRoute(route);
             vehicle.display();
         }
         else {
             step = (x1 - x0) / NUMSTEPS;
 
-            //поменять цикл!!!
-            for (int x = x0; x <= x1; x += step) {
-
+            int x = x0;
+            for (int i = 0; i < NUMSTEPS; i++) {
                 int y = getNewY(x, y0, y1, x0, x1);
 
                 //формируем маршрут
                 route[k][0] = x;
                 route[k][1] = y;
                 k++;
+                x += step;
 
                 if (step == 0)
                     break;
+
             }
 
             vehicle.setRoute(route);
             vehicle.display();
         }
+    }
+
+    @Override
+    public void correctRoute(int[][] newRoute) {
+        vehicle.setRoute(newRoute);
+        vehicle.display();
+    }
+
+    @Override
+    void accept(Visitor v) {
+        v.visit(this);
     }
 
     private int getNewY(int x, int y0, int y1, int x0, int x1) {

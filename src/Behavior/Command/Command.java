@@ -1,4 +1,4 @@
-package Behavior;
+package Behavior.Command;
 
 import Delivery.Bridge.Abstraction.Vehicle;
 import Delivery.Delivery;

@@ -1,32 +1,23 @@
 package sample;
 
+import Behavior.Command.Command;
+import Behavior.Command.DeliverCommand;
 import Client.Decorator.Man;
 import Client.Decorator.Reciever;
 import Client.Decorator.Sender;
-import Delivery.Bridge.Abstraction.Car;
-import Delivery.Bridge.Abstraction.Vehicle;
 import Delivery.Bridge.Implem.Draw;
 import Delivery.Bridge.Implem.Implementation;
-import Delivery.Bridge.Implem.Text;
-import Delivery.Delivery;
-import Delivery.*;
 import Delivery.Flyweight.Image;
 import ModelView.DeliveryView;
 import Pack.Composite.Order;
 import Pack.Facade;
 import Pack.InformExpert;
-import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 public class Controller {
@@ -72,8 +63,8 @@ public class Controller {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        impl = new Draw(scene);
-        impl = new Text();
+        impl = new Draw(scene);
+//        impl = new Text();
 
         deliveryView = new DeliveryView(impl, image);
         informExpert = new InformExpert(deliveryView.getDelivery());
@@ -105,7 +96,10 @@ public class Controller {
 
         countOrders.setText("" + informExpert.countOrders);
 
-        deliveryView.getDelivery().toDeliverOrder(o, deliveryView.getVehicle());
+        Command deliverCommand = new DeliverCommand(deliveryView.getDelivery(), o, deliveryView.getVehicle());
+        deliverCommand.execute();
+
+//        deliveryView.getDelivery().toDeliverOrder(o, deliveryView.getVehicle());
     }
 
     private void clearText() {

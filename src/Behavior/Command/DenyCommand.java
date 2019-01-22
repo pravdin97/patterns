@@ -1,4 +1,4 @@
-package Behavior;
+package Behavior.Command;
 
 import Delivery.Bridge.Abstraction.Vehicle;
 import Delivery.Delivery;
@@ -11,6 +11,6 @@ public class DenyCommand extends Command{
 
     @Override
     public void execute() {
-
+        delivery.dropPackage(order);
     }
 }

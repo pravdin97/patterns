@@ -1,4 +1,5 @@
 package Delivery;
+import Behavior.Visitor.Visitor;
 import Delivery.Bridge.Abstraction.Car;
 import Delivery.Bridge.Abstraction.Train;
 import Delivery.Bridge.Abstraction.Vehicle;
@@ -22,5 +23,15 @@ public class ByTrain extends IDeliveryTech {
         vehicle.setCoords(pack.x, pack.y);
 
         vehicle.display();
+    }
+
+    @Override
+    public void correctRoute(int[][] newRoute) {
+
+    }
+
+    @Override
+    void accept(Visitor v) {
+        v.visit(this);
     }
 }
